@@ -17,11 +17,6 @@ To install `language-tree-sitter-query` search for it in the Install pane of the
 
 Open a `.scm` query file such as `highlights.scm`, `folds.scm` or `tags.scm`. The editor selects the Tree-sitter Query grammar automatically. This grammar describes Tree-sitter's query language; Scheme source requires a Scheme grammar.
 
-## Services
-
-- `hyperlink.injection`: consumed to highlight clickable URLs inside comments.
-- `todo.injection`: consumed to highlight TODO-style markers inside comments.
-
 ## Contributing
 
 Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub. Any feedback is welcome!

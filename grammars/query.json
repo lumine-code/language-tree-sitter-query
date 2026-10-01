@@ -16,6 +16,7 @@
     "highlightsQuery": "query-highlights.scm",
     "foldsQuery": "query-folds.scm",
     "indentsQuery": "query-indents.scm",
-    "tagsQuery": "query-tags.scm"
+    "tagsQuery": "query-tags.scm",
+    "injectionsQuery": "query-injections.scm"
   }
 }
