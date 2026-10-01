@@ -1,53 +1,31 @@
-# tree-sitter-tools
+# language-tree-sitter-query
 
-Tools for writing [Tree-sitter](https://tree-sitter.github.io/tree-sitter/) grammars in Pulsar, including a grammar for Tree-sitter query files.
+Tree-sitter query language support.
 
-**IMPORTANT:** Currently works on Pulsar v1.106 and newer. Versions 1.106 through 1.112.1 need the `core.useExperimentalModernTreeSitter` setting enabled; versions 1.113 and newer enable modern Tree-sitter grammars by default.
+## Features
 
-<img width="1304" alt="tree-sitter-tools screenshot" src="https://user-images.githubusercontent.com/3450/235327463-81e1cb14-f34c-4f2d-bc0f-dcfeb4816d16.png">
+- **Grammars**: provides Tree-sitter grammars for `.scm` query files.
+- **Syntax highlighting**: distinguishes captures, predicates, fields, node names, strings, comments, anchors and quantifiers.
+- **Folding and indentation**: follows parenthesized patterns and bracketed alternatives.
+- **Symbols**: exposes capture names to Tree-sitter symbol providers.
 
-## Inspector
+## Installation
 
-The Tree-sitter inspector pane is an enhanced version of the [Tree-sitter playground](https://tree-sitter.github.io/tree-sitter/playground).
+To install `language-tree-sitter-query` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-tree-sitter-query`.
 
-When inside of a buffer using a modern Tree-sitter grammar, you can open the editor any of the following ways:
+## Usage
 
-* Invoking the **Tree Sitter Tools: Open Inspector For Editor** command.
-* Right-clicking on an editor and selecting the **Open Tree-sitter Inspector For Editor**.
-* Invoking the hotkey: <kbd>Ctrl+Alt+Shift+I</kbd>.
-* Selecting _Packages → Tree-Sitter Tools → Open Inspector For Active Editor_ from the application menu.
+Open a `.scm` query file such as `highlights.scm`, `folds.scm` or `tags.scm`. The editor selects the Tree-sitter Query grammar automatically. This grammar describes Tree-sitter's query language; Scheme source requires a Scheme grammar.
 
-A pane will open on the right side showing a representation of the editor’s Tree-sitter tree.
+## Services
 
-Here’s what you can do:
+- `hyperlink.injection`: consumed to highlight clickable URLs inside comments.
+- `todo.injection`: consumed to highlight TODO-style markers inside comments.
 
-* Clicking any node in the tree will select the corresponding editor range.
-* Clicking any node will also log the node itself to the developer tools console for inspection.
-* Moving the cursor will change what is focused in the inspector.
-* You may toggle whether anonymous nodes are shown or hidden in the tree.
-* You may choose a different “language layer” via the drop-down menu if more than one layer is present. The first item in the list will always be the root language layer. If the layer you’re inspecting is destroyed as a result of buffer changes, the view will reset to the root layer.
-* When you are inspecting a language layer other than the root, you may check the “Show injected ranges” checkbox to see the current content ranges of that layer’s injection. Editing the document while this option is checked is a useful visualization of how injection layers are re-processed in response to changes.
+## Source and licenses
 
-### Running queries
+The grammar queries originate in [pulsar-tree-sitter-tools](https://github.com/savetheclocktower/pulsar-tree-sitter-tools) and are adapted for Lumine under the MIT license. The parser is built from an immutable revision of [tree-sitter-query](https://github.com/tree-sitter-grammars/tree-sitter-query) under Apache-2.0. See [NOTICE](NOTICE), [LICENSE](LICENSE) and [LICENSE-APACHE](LICENSE-APACHE).
 
-The query field is shown below the node inspector and accepts any valid [Tree-sitter query syntax](https://tree-sitter.github.io/tree-sitter/using-parsers#pattern-matching-with-queries).
+## Contributing
 
-When a query runs, each capture name in the query will be annotated with a colored decoration, and any matches for that capture in the editor will have the same decoration.
-
-The decorations will persist through editor changes, and will update when the editor updates. When the active layer is changed, the query editor will clear.
-
-Keep in mind that some predicates are not implemented in the `web-tree-sitter` bindings, even if they’re present in the documentation and in sample query files in Tree-sitter parser repositories.
-
-The built-in predicates `#match?` and `#eq?` are supported, as are [certain custom predicates](https://gist.github.com/savetheclocktower/c9607b97477d4817911e4f2f8db89679#file-api-documentation-md) supported by Pulsar via `#is?`, `#is-not?` and `#set!`:
-
-* scope tests (e.g., `(#is? test.first)`) will be applied, and any captures that fail their tests will not be decorated.
-* scope adjustments (e.g., `(#set! adjust.startAndEndAroundFirstMatchOf "^#")`) will be applied, and the adjusted range will be decorated rather than the original capture range.
-
-## Grammar
-
-A grammar for Tree-sitter query files is included.
-
-## Planned enhancements
-
-* Ability to view or copy a node’s own `toString` (its description of itself in query syntax)
-* Modes for assisting in writing and debugging queries for indents and folds
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub. Any feedback is welcome!

@@ -1,0 +1,10 @@
+{
+  ".source.scm": {
+    "bracket-matcher": {
+      "autocompleteCharacters": ["()", "[]", "\"\""]
+    },
+    "editor": {
+      "commentStart": "; "
+    }
+  }
+}

@@ -1,20 +1,55 @@
 {
-  "name": "tree-sitter-tools",
-  "main": "./lib/tree-sitter-tools",
-  "version": "0.0.17",
-  "description": "Tools for writing Tree-sitter grammars in Pulsar",
-  "keywords": [],
-  "repository": "https://github.com/savetheclocktower/pulsar-tree-sitter-tools",
+  "name": "language-tree-sitter-query",
+  "author": "lumine-code",
+  "version": "1.0.0",
+  "main": "lib/main",
+  "files": [
+    "grammars",
+    "lib",
+    "settings",
+    "spec",
+    "LICENSE-APACHE",
+    "NOTICE"
+  ],
+  "description": "Tree-sitter query language support.",
+  "keywords": [
+    "scm",
+    "captures",
+    "predicates"
+  ],
+  "repository": "https://github.com/lumine-code/language-tree-sitter-query",
+  "bugs": {
+    "url": "https://github.com/lumine-code/language-tree-sitter-query/issues"
+  },
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0",
-    "node": ">=14"
+    "lumine": "^1.0.0",
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "lumine --test spec",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "consumedServices": {
+    "hyperlink.injection": {
+      "versions": {
+        "^1.0.0": "consumeHyperlinkInjection"
+      }
+    },
+    "todo.injection": {
+      "versions": {
+        "^1.0.0": "consumeTodoInjection"
+      }
+    }
   },
   "devDependencies": {
-    "eslint": "^8.36.0"
-  },
-  "dependencies": {
-    "clusterize.js": "^1.0.0",
-    "etch": "^0.14.1"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-n": "^18.4.0",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9"
   }
 }

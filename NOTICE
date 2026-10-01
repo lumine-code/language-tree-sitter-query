@@ -1,0 +1,10 @@
+language-tree-sitter-query
+
+Grammar queries are derived from savetheclocktower/pulsar-tree-sitter-tools.
+Copyright (c) 2023 Andrew Dupont; licensed under MIT (see LICENSE).
+Lumine adaptation and extensions: Copyright (c) 2026 lumine-code.
+
+grammars/query.wasm is compiled from tree-sitter-grammars/tree-sitter-query at
+8e9e223812ff30854fbc912adbec696ba5f0e023 using tree-sitter-cli 0.27.0.
+The parser is licensed under Apache-2.0 (see LICENSE-APACHE).
+Source: https://github.com/tree-sitter-grammars/tree-sitter-query

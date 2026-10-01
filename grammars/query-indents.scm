@@ -3,9 +3,5 @@
   "("
 ] @indent
 
-[
-  "]"
-  ; ")"
-] @dedent
-
+"]" @dedent
 ")" @dedent.next
