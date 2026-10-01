@@ -22,10 +22,6 @@ Open a `.scm` query file such as `highlights.scm`, `folds.scm` or `tags.scm`. Th
 - `hyperlink.injection`: consumed to highlight clickable URLs inside comments.
 - `todo.injection`: consumed to highlight TODO-style markers inside comments.
 
-## Source and licenses
-
-The grammar queries originate in [pulsar-tree-sitter-tools](https://github.com/savetheclocktower/pulsar-tree-sitter-tools) and are adapted for Lumine under the MIT license. The parser is built from an immutable revision of [tree-sitter-query](https://github.com/tree-sitter-grammars/tree-sitter-query) under Apache-2.0. See [NOTICE](NOTICE), [LICENSE](LICENSE) and [LICENSE-APACHE](LICENSE-APACHE).
-
 ## Contributing
 
 Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub. Any feedback is welcome!
