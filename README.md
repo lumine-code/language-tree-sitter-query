@@ -2,6 +2,8 @@
 
 Tree-sitter query language support.
 
+Fork of [savetheclocktower/pulsar-tree-sitter-tools](https://github.com/savetheclocktower/pulsar-tree-sitter-tools).
+
 ## Features
 
 - **Grammars**: provides Tree-sitter grammars for `.scm` query files.

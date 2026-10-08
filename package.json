@@ -5,9 +5,7 @@
   "files": [
     "grammars",
     "settings",
-    "spec",
-    "LICENSE-APACHE",
-    "NOTICE"
+    "spec"
   ],
   "description": "Tree-sitter query language support.",
   "keywords": [
