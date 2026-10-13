@@ -11,6 +11,8 @@ Fork of [savetheclocktower/pulsar-tree-sitter-tools](https://github.com/savethec
 - **Folding and indentation**: follows parenthesized patterns and bracketed alternatives.
 - **Symbols**: exposes capture names to Tree-sitter symbol providers.
 
+![Tree-sitter Query syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-tree-sitter-query` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-tree-sitter-query`.

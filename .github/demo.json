@@ -1,0 +1,16 @@
+{
+  "title": "language-tree-sitter-query",
+  "description": "Tree-sitter Query syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "4982f81b761f160d6211eca2f086f337ba5ae761",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "Tree-sitter Query syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 802
+    }
+  ]
+}
