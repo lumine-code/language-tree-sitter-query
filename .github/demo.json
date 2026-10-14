@@ -1,16 +1,61 @@
 {
   "title": "language-tree-sitter-query",
-  "description": "Tree-sitter Query syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "4982f81b761f160d6211eca2f086f337ba5ae761",
+  "description": "Tree-sitter Query syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "6ea463b94c08a6b0b419be9e25f2cb77f135c4ee",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "56e29e7780d630523eae5c7b678b768f8965dcdac0215f4b79a48f0773218cc0",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 802 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "0362a9fac7d6e153a768c0381800d6f3eb06647a",
+      "dirty": true,
+      "workingTreeHash": "c4defaf459f08a90cb1517ff7c04fdeeae7e7de98030f65415ee09a97572e9a7"
+    },
+    "package": {
+      "revision": "6ea463b94c08a6b0b419be9e25f2cb77f135c4ee",
+      "dirty": true,
+      "workingTreeHash": "7da4c8dcde047e4a5e1bf991964440b06cbb48097e0bf5913632d0acb54182da"
+    },
+    "language-tree-sitter-query": {
+      "revision": "6ea463b94c08a6b0b419be9e25f2cb77f135c4ee",
+      "dirty": true,
+      "workingTreeHash": "7da4c8dcde047e4a5e1bf991964440b06cbb48097e0bf5913632d0acb54182da"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.scm",
+      "sha256": "46c860cbbfba8cabc7a9fd9ac35ca239be57092e9086592be6056b7869fdb55a"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "Tree-sitter Query syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 802
+      "height": 802,
+      "sha256": "220b80d4420661494b34ee897bf0dee04fc76d3f5f9be8bf9af40fedac49f8c7"
     }
   ]
 }
