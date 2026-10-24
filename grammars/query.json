@@ -11,7 +11,7 @@
   },
   "treeSitter": {
     "parserSource": "github:tree-sitter-grammars/tree-sitter-query#8e9e223812ff30854fbc912adbec696ba5f0e023",
-    "wasmBuildTool": "tree-sitter-cli#v0.27.0",
+    "wasmBuildTool": "tree-sitter-cli#v0.27.1",
     "grammar": "query.wasm",
     "highlightsQuery": "query-highlights.scm",
     "foldsQuery": "query-folds.scm",
