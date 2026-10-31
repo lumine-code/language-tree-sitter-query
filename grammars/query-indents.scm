@@ -1,3 +1,7 @@
+; A recovered quote is literal content even inside an unfinished pattern.
+(ERROR "\"" @match.next
+  (#set! indent.match startPosition))
+
 ; Delimiters balance on the row where they occur. A completed child or
 ; predicate does not dedent the following capture or sibling pattern.
 ["[" "("] @indent
